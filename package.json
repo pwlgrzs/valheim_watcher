@@ -1,0 +1,16 @@
+{
+  "name": "valheim-watcher",
+  "version": "1.0.0",
+  "description": "Valheim Discord Watcher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pblvsk",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.3.0",
+    "gamedig": "^4.0.5",
+    "log-timestamp": "^0.3.0"
+  }
+}
