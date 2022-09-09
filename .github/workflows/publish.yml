@@ -1,6 +1,8 @@
 name: 'Docker'
 on:
   push:
+    paths-ignore:
+      - 'README.md'
     branches:
       - main 
 env:

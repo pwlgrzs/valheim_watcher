@@ -43,7 +43,9 @@ services:
 ## Screenshots
 
 Bot status:
+
 ![Bot Status](https://pwlgrzs.usermd.net/img/VBot/Screenshot_1.png)
 
 Channel status:
+
 ![Bot Status](https://pwlgrzs.usermd.net/img/VBot/Screenshot_5.png)
