@@ -10,10 +10,13 @@ const client = new Client({
 
 try {
     client.login(process.env.TOKEN);
-    console.log("You have logged in successfully");
-} catch (err) {
-    console.log(err);
-}
+  } catch (e) {
+    if (e instanceof err) {
+        console.log(err);
+    } else {
+        console.log("You have logged in successfully");
+    }
+  }
 
 function DiscordUpdate() {
     Gamedig.query({
@@ -39,7 +42,7 @@ function DiscordUpdate() {
         console.log(e);
         client.user.setPresence({
             activity: {
-                name: 'Server wyłączony.'
+                name: 'Server offline.'
             },
             status: 'idle',
         });
