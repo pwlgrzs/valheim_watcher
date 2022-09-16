@@ -39,11 +39,9 @@ function DiscordUpdate() {
         console.log('Status and channel updated.');
     })
     .catch((e) => {
-        console.log(e);
+        console.log("Server is offline");
         client.user.setPresence({
-            activity: {
-                name: 'Server offline.'
-            },
+            activities: [{ name: `server offline :(`, type: ActivityType.Playing }],
             status: 'idle',
         });
     });
