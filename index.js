@@ -44,6 +44,7 @@ function DiscordUpdate() {
             activities: [{ name: `server offline :(`, type: ActivityType.Playing }],
             status: 'idle',
         });
+	client.channels.cache.get(process.env.CHANNEL).setName(`Server offline.`);
     });
 }
 
